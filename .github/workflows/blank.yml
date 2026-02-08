@@ -1,0 +1,11 @@
+name: Hello CI
+
+on: push
+
+jobs:
+  hello:
+    runs-on: windows-latest
+    steps:
+      - name: Say Hello
+        run: echo Hello GitHub Actions
+
