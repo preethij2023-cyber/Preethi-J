@@ -1,0 +1,12 @@
+name: CI Info
+
+on: push
+
+jobs:
+  info:
+    runs-on: windows-latest
+    steps:
+      - name: Show system info
+        run: |
+          echo GitHub Runner Info
+          systeminfo | findstr /B /C:"OS Name" /C:"OS Version"
